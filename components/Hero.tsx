@@ -27,7 +27,7 @@ const Hero = () => {
 
       {/* heading */}
       <div className="flex justify-center relative my-10 z-10">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] border border-white flex items-center justify-center flex-col">
+        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex items-center justify-center flex-col">
           <h2 className="uppercase tracking-widest text-xs text-blue-100 text-center  max-w-80">
             Dynamic web magic with next.js
           </h2>
