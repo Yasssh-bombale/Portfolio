@@ -5,7 +5,7 @@ import { ExternalLink } from "lucide-react";
 
 const RecentProjects = () => {
   return (
-    <div className="py-10">
+    <div id="projects" className="py-10">
       <h1 className="heading">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
@@ -13,14 +13,14 @@ const RecentProjects = () => {
 
       {/* projects cards */}
 
-      <div className="flex flex-wrap items-center justify-center gap-16 mt-10 p-4">
+      <div className="flex flex-wrap items-center justify-center gap-x-24 gap-y-8 mt-10 p-4">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="h-[25rem] lg:min-h-[32.5rem] flex items-center justify-center w-[80vw] sm:w-96"
+            className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center w-[80vw] sm:w-[570px]"
           >
             <PinContainer title={project.link} href={project.link}>
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] h-[20vh] lg:h-[30vh] mb-10 overflow-hidden">
+              <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] sm:h-[40vh] h-[40vh] mb-10 overflow-hidden">
                 <div className="h-full w-full relative overflow-hidden lg:rounded-3xl bg-[#13162d]">
                   <img src={"/bg.png"} alt={"bg-img"} />
                 </div>
