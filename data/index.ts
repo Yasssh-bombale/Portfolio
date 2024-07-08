@@ -72,6 +72,7 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    slug: "aiexpress",
     title: "AI EXPRESS - SaaS web application",
     des: "Impliment Api Rate limiting, Enabling users to generate images, videos, conversations, code, and music with advanced AI models.",
     img: "/aiexpress.png",
@@ -80,6 +81,7 @@ export const projects = [
   },
   {
     id: 2,
+    slug: "quick-meds",
     title: "QuickMeds - Ultimate Online Pharmacy Solution",
     des: "Quick-Meds provides a comprehensive platform for medical store owners to create online stores and manage their orders. Customers can upload prescriptions to order medications, while store owners oversee stock and order status, ensuring a smooth and efficient service.",
     img: "/quickmeds.png",
@@ -95,6 +97,7 @@ export const projects = [
   },
   {
     id: 3,
+    slug: "yassshus-blog",
     title: "Yasshu's Blog",
     des: "On this blog, you'll find weekly articles and tutorials on topics such as web development, software engineering, and programming languages. Yash is always learning and exploring new technologies, so be sure to check back often for new content!",
     img: "/blog.png",
@@ -110,6 +113,7 @@ export const projects = [
   },
   {
     id: 4,
+    slug: "jevlis-ka",
     title: "Jevlis Ka - Food Restaurant WebApp",
     des: "FoodiesHub is a comprehensive platform where restaurant owners can create and manage their online presence, streamlining order management and customer service. Users can easily search for and order from their favorite restaurants by cuisine, name, or city, with advanced filters to find exactly what they crave.",
     img: "/jevliska.png",
