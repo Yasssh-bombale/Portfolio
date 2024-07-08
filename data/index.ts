@@ -230,13 +230,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    href: "https://github.com/Yasssh-bombale",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/link.svg",
+    href: "https://www.linkedin.com/in/yash-bombale-110226244",
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "/twit.svg",
+    href: "https://x.com/YashBombale?t=e8m8-nflk5xdo-mBPjWYKA&s=09",
   },
 ];
