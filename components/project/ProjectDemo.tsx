@@ -23,10 +23,10 @@ const ProjectDemo = ({
         src={iframeSrc}
         title="YouTube video player"
         allowFullScreen
-        mozallowfullscreen
-        msallowfullscreen
-        oallowfullscreen
-        webkitallowfullscreen
+        // mozallowfullscreen
+        // msallowfullscreen
+        // oallowfullscreen
+        // webkitallowfullscreen
       ></iframe>
       <h1 className={`heading z-10 flex  justify-center ${titleClass}`}>
         {projectTitle} -{" "}
