@@ -7,6 +7,7 @@ type Props = {
   projectDes: string;
   iFrameClass?: string;
   titleClass?: string;
+  highlightedUnderline?: boolean;
 };
 
 const ProjectDemo = ({
@@ -15,6 +16,7 @@ const ProjectDemo = ({
   iFrameClass,
   titleClass,
   projectDes,
+  highlightedUnderline,
 }: Props) => {
   return (
     <>
@@ -28,13 +30,17 @@ const ProjectDemo = ({
         // oallowfullscreen
         // webkitallowfullscreen
       ></iframe>
-      <h1 className={`heading z-10 flex  justify-center ${titleClass}`}>
+      <h1
+        className={`text-lg font-normal tracking-wider sm:text-2xl sm:font-bold lg:heading  z-10 flex  justify-center text-nowrap  p-2 ${titleClass}`}
+      >
         {projectTitle} -{" "}
-        <span className="flex flex-col items-center justify-center  border border-white ">
+        <span className="flex flex-col items-center justify-center ">
           {projectDes}
-          <div className="w-full">
-            <TextUnderline />
-          </div>
+          {highlightedUnderline && (
+            <div className="w-full">
+              <TextUnderline />
+            </div>
+          )}
         </span>
       </h1>
     </>
