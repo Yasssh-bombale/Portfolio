@@ -21,7 +21,7 @@ const ProjectDemo = ({
   return (
     <>
       <iframe
-        className={`aspect-video max-w-4xl w-full z-10 rounded-lg ${iFrameClass}`}
+        className={`aspect-video max-w-4xl w-full z-10 rounded-lg mt-5 ${iFrameClass}`}
         src={iframeSrc}
         title="YouTube video player"
         allowFullScreen
@@ -31,7 +31,7 @@ const ProjectDemo = ({
         // webkitallowfullscreen
       ></iframe>
       <h1
-        className={`text-lg font-normal tracking-wider sm:text-2xl sm:font-bold lg:heading  z-10 flex  justify-center text-nowrap  p-2 ${titleClass}`}
+        className={`text-lg font-bold tracking-wider sm:text-2xl sm:font-bold lg:heading  z-10 flex  justify-center text-nowrap  p-2 ${titleClass}`}
       >
         {projectTitle} -{" "}
         <span className="flex flex-col items-center justify-center ">

@@ -243,3 +243,21 @@ export const socialMedia = [
     href: "https://x.com/YashBombale?t=e8m8-nflk5xdo-mBPjWYKA&s=09",
   },
 ];
+
+export const yasshusBlog = {
+  id: 1,
+  project: "yassshus blog",
+  leftBulletPoints: [
+    "Admin dashboard",
+    "Admins can manage users,posts,and comments",
+    "Only Admins can create and edit blog posts and has authority to delete users,posts and comments",
+    "JWT Token Authentication and users passwords are end-to-end encrypted",
+    "Ensuring robust security with strict validations",
+  ],
+  rightBulletPoints: [
+    "Search page providing seamless experience for users exploring post by category and sorting",
+    "post images are uploaded using firebase storage",
+    "Only signed in users can engage with likes and comments on posts",
+    "Only admins and post owners has authority to delete comments on posts and comment owners can edit their own comments only",
+  ],
+};
