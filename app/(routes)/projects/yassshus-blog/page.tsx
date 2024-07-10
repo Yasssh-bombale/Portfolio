@@ -3,12 +3,11 @@ import Destination from "@/components/project/Destination";
 import ProjectDemo from "@/components/project/ProjectDemo";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import { yasshusBlog } from "@/data/index";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import BulletContainer from "@/components/project/BulletContainer";
 import TimeStampsContainer from "@/components/project/TimeStampsContainer";
 
 const page = () => {
-  const ref = useRef<HTMLButtonElement>(null);
   const [timeStamps, setTimeStamps] = useState(0);
   const [clickedTimeStamp, setClickedTimeStamp] = useState("");
 
