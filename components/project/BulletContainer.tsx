@@ -6,7 +6,7 @@ type Props = {
   rightBulletPoints: string[];
 };
 
-const ProjectSpotLight = ({ leftBulletPoints, rightBulletPoints }: Props) => {
+const BulletContainer = ({ leftBulletPoints, rightBulletPoints }: Props) => {
   return (
     <div className="w-full  flex flex-col md:flex-row justify-center  md:divide-x-2 md:divide-dashed md:divide-white-200 px-2 z-50 mb-10">
       {/* left bullet points */}
@@ -29,4 +29,4 @@ const ProjectSpotLight = ({ leftBulletPoints, rightBulletPoints }: Props) => {
   );
 };
 
-export default ProjectSpotLight;
+export default BulletContainer;

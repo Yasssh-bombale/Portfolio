@@ -1,11 +1,17 @@
+"use client";
 import Destination from "@/components/project/Destination";
 import ProjectDemo from "@/components/project/ProjectDemo";
-import ProjectSpotLight from "@/components/project/ProjectSpotLight";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import { yasshusBlog } from "@/data/index";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import BulletContainer from "@/components/project/BulletContainer";
+import TimeStampsContainer from "@/components/project/TimeStampsContainer";
 
 const page = () => {
+  const ref = useRef<HTMLButtonElement>(null);
+  const [timeStamps, setTimeStamps] = useState(0);
+  const [clickedTimeStamp, setClickedTimeStamp] = useState("");
+
   const developers = [
     {
       id: 1,
@@ -14,6 +20,17 @@ const page = () => {
       image: "/yash1.jpg",
     },
   ];
+
+  useEffect(() => {
+    console.log("time stamps from useEffect", clickedTimeStamp);
+    const text = clickedTimeStamp;
+    const timeArray = text.split(":");
+    const minutes = parseInt(timeArray[0]);
+    const seconds = parseInt(timeArray[1]);
+    const timeStamps = 60 * minutes + seconds;
+    console.log(timeStamps);
+    setTimeStamps(timeStamps);
+  }, [clickedTimeStamp]);
 
   return (
     <div className="flex flex-col items-center justify-center max-w-7xl w-full gap-5">
@@ -25,7 +42,7 @@ const page = () => {
 
       {/* ProjectDemo includes iframe for demo videos and title of project */}
       <ProjectDemo
-        iframeSrc="https://www.youtube.com/embed/lIe0lPS7h1Y?si=O0MG8oYJeqsgAJsf"
+        iframeSrc={`https://www.youtube.com/embed/lIe0lPS7h1Y?si=O0MG8oYJeqsgAJsf&amp;start=${timeStamps}`}
         projectTitle="Yassshu's blog"
         projectDes="With Admin dashboard"
         highlightedUnderline
@@ -50,9 +67,28 @@ const page = () => {
       <h1 className="heading mb-10 z-50">
         Spotlight of the <span className="text-purple">project</span>
       </h1>
-      <ProjectSpotLight
+      <BulletContainer
         leftBulletPoints={yasshusBlog.leftBulletPoints}
         rightBulletPoints={yasshusBlog.rightBulletPoints}
+      />
+
+      {/* tech stacks */}
+      <h1 className="heading mb-10 z-50">
+        Technologies used in <span className="text-purple">project</span>
+      </h1>
+      <BulletContainer
+        leftBulletPoints={yasshusBlog.techStacks.leftBulletPoints}
+        rightBulletPoints={yasshusBlog.techStacks.rightBulletPoints}
+      />
+
+      {/* Timestamps guidelines */}
+      <h1 className="heading mb-10 z-50">
+        Timestamps <span className="text-purple">guidelines</span>
+      </h1>
+      <TimeStampsContainer
+        leftTimeStamps={yasshusBlog.timeStamps.leftTimeStamps}
+        rightTimeStamps={yasshusBlog.timeStamps.rightTimeStamps}
+        setClickedTimeStamp={setClickedTimeStamp}
       />
     </div>
   );

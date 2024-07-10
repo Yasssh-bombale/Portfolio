@@ -21,6 +21,7 @@ const ProjectDemo = ({
   return (
     <>
       <iframe
+        id="video"
         className={`aspect-video max-w-4xl w-full z-10 rounded-lg mt-5 ${iFrameClass}`}
         src={iframeSrc}
         title="YouTube video player"

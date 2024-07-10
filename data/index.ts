@@ -260,4 +260,78 @@ export const yasshusBlog = {
     "Only signed in users can engage with likes and comments on posts",
     "Only admins and post owners has authority to delete comments on posts and comment owners can edit their own comments only",
   ],
+  techStacks: {
+    leftBulletPoints: [
+      "React.js for the front-end",
+      "Node.js and Express.js for the backend",
+      "MongoDB Atlas cloud for the database",
+      "Tailwinds CSS for rapidly building custom user interfaces",
+    ],
+    rightBulletPoints: [
+      "Redux toolkit for the state management",
+      "Authentication is done using Json Web Tokens",
+      "Firebase used for uploading image and Google Oauth",
+      "Postman  for the API testing",
+    ],
+  },
+  timeStamps: {
+    leftTimeStamps: [
+      {
+        time: "4:12",
+        chapter: "Admin Dashboard",
+      },
+      {
+        time: "0:24",
+        chapter: "Post page",
+      },
+      {
+        time: "2:07",
+        chapter: "Only Admins can create posts",
+      },
+      {
+        time: "1:14",
+        chapter: "Comments on post page",
+      },
+      {
+        time: "10:26",
+        chapter: "Search page",
+      },
+
+      {
+        time: "12:51",
+        chapter: "Responsive on mobile devices",
+      },
+      {
+        time: "5:04",
+        chapter: "Only admin can delete any user",
+      },
+    ],
+    rightTimeStamps: [
+      {
+        time: "8:31",
+        chapter: "SignUp and SignIn functionality",
+      },
+      {
+        time: "5:41",
+        chapter: "Admin can delete any comments",
+      },
+      {
+        time: "6:19",
+        chapter: "Only admins can edit post",
+      },
+
+      {
+        time: "9:11",
+        chapter: "Google authentication",
+      },
+      {
+        time: "9:29",
+        chapter: "Update user",
+      },
+      {
+        time: "11:40",
+        chapter: "Admin routes",
+      },
+    ],
+  },
 };
