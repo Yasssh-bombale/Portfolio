@@ -7,7 +7,7 @@ import React, { useEffect, useState } from "react";
 import BulletContainer from "@/components/project/BulletContainer";
 import TimeStampsContainer from "@/components/project/TimeStampsContainer";
 
-const page = () => {
+const Page = () => {
   const [timeStamps, setTimeStamps] = useState(0);
   const [clickedTimeStamp, setClickedTimeStamp] = useState("");
 
@@ -93,4 +93,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
